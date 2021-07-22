@@ -18,7 +18,7 @@ def remainders(number):
     # get the remainder of the number by the range of each number up to half
     # the number because unecessary to compute second half (divisble by 2)
     # with list comprehension
-    left_over = [number%i for i in range(1,int(number/2)+1)]
+    left_over = [number%demoninator for demoninator in range(1,int(number/2)+1)]
 
     # count the number of zeros in the remainders list as 0s indicate
     # how many numbers the number is perfecly divisible by - only one
