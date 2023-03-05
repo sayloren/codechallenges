@@ -159,38 +159,12 @@
 # 127 	7F 	01111111 	&#127; 	DEL 	Delete
 
 
-var s = ' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~';
+chars = ' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~';
 
 program_dict = {'>':'ptr++','<':'ptr--','+':'array[ptr]++','-':'array[ptr]--','.':'print(chr(array[ptr]))','[':'while(array[ptr]){',']':'}'}
 
-if chr = '>':
-     'data_ptr += 1'
-elif chr = '<':
-    'data_ptr -= 1'
-elif chr = '+':
-    'memory[data_ptr] += 1'
-elif chr = '-':
-    'memory[data_ptr] -= 1'
-elif chr = '.':
-    'print(chr(memory[data_ptr]))'
-elif chr = '[':
-    'while(array[ptr]){'
-elif chr = ']':
-    '}'
-    
 
-import sys
 
-# Printing
-print('Hello, World!')
-
-# Looping
-for i in range(10):
-    print(i)
-
-# Accessing arguments
-for arg in sys.argv[1:]:
-    print(arg)
 
 
 
